@@ -1,0 +1,18 @@
+{
+  "name": "food-order-backend",
+  "version": "1.0.0",
+  "description": "Backend server for ReactFood ordering app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": ["food", "ordering", "restaurant", "api"],
+  "author": "Mohammed Taher Abdlhedi and Ilyes Bahloul",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
