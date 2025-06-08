@@ -51,7 +51,7 @@ function MenuPage() {
         const processedData = data.map(meal => ({
           ...meal,
           price: parseFloat(meal.price),
-          // Use relative path for images
+          // Use correct path for images (already includes images/ prefix)
           image: `/${meal.image}`,
           // Assign a category based on the meal name or description
           category: assignCategory(meal.name, meal.description)
