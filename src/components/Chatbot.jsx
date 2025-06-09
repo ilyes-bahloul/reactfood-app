@@ -50,7 +50,7 @@ export default function Chatbot({ isOpen, onClose }) {
         const botMessage = {
           type: 'bot',
           content: data.response,
-          timestamp: data.timestamp
+          timestamp: data.timestamp || new Date().toISOString()
         };
         setMessages(prev => [...prev, botMessage]);
       } else {

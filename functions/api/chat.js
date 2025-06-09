@@ -58,7 +58,10 @@ export async function onRequest(context) {
       const data = await response.json();
       const text = data.candidates[0].content.parts[0].text;
 
-      return new Response(JSON.stringify({ response: text }), {
+      return new Response(JSON.stringify({ 
+        response: text,
+        timestamp: new Date().toISOString() 
+      }), {
         headers: {
           'Content-Type': 'application/json',
           ...corsHeaders
