@@ -29,6 +29,8 @@ function MenuPage() {
   ]);
   
   // Filter state
+  // Filter state
+  
   const [filter, setFilter] = useState({
     category: 'all',
     maxPrice: 20
